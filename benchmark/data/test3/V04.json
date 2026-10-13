@@ -1,0 +1,107 @@
+{
+ "case_id": "V04",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "general",
+ "entity": "contraindication of NSAIDs after CABG",
+ "value_a": "contraindicated",
+ "value_b": "acceptable",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Bulletin A states NSAIDs are contraindicated in the early period after coronary artery bypass grafting.",
+   "population": "patients after CABG",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "A copy of Bulletin A, republished by a second society, states NSAIDs are contraindicated in the early period after coronary artery bypass grafting.",
+   "population": "patients after CABG",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Review C considers short-course NSAIDs acceptable after coronary artery bypass grafting when the patient has no renal disease.",
+   "population": "patients after CABG",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Paracetamol is preferred first-line.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

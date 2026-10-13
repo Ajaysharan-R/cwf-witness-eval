@@ -1,0 +1,107 @@
+{
+ "case_id": "V36",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "ondansetron",
+ "value_a": "4 mg",
+ "value_b": "8 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Ondansetron 4 mg intravenously is given for postoperative nausea in adults.",
+   "population": "adults with postoperative nausea",
+   "dosage_value": 4,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Hospital B also uses ondansetron 4 mg intravenously for postoperative nausea in adults.",
+   "population": "adults with postoperative nausea",
+   "dosage_value": 4,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Ondansetron 8 mg is given before moderately emetogenic chemotherapy in adults.",
+   "population": "adults receiving chemotherapy",
+   "dosage_value": 8,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "A third guideline gives ondansetron 8 mg intravenously for postoperative nausea in adults.",
+   "population": "adults with postoperative nausea",
+   "dosage_value": 8,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

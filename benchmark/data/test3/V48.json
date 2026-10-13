@@ -1,0 +1,107 @@
+{
+ "case_id": "V48",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "general",
+ "entity": "nitrofurantoin course for uncomplicated cystitis",
+ "value_a": "5 days",
+ "value_b": "3 days",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Urinary tract infections are among the commonest outpatient bacterial infections.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Fosfomycin is a single-dose alternative for lower urinary tract infection.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Cranberry products have shown mixed results in prevention.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Local guidance gives nitrofurantoin for 5 days in non-pregnant women with uncomplicated cystitis.",
+   "population": "non-pregnant women with uncomplicated cystitis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "Another guideline gives nitrofurantoin for 3 days in non-pregnant women with uncomplicated cystitis.",
+   "population": "non-pregnant women with uncomplicated cystitis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "annotator": "adjudicated",
+ "answers": {
+  "V17": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p3",
+     "p5"
+    ]
+   ]
+  },
+  "V20": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p1",
+     "p3"
+    ]
+   ]
+  },
+  "V22": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p2",
+     "p3"
+    ]
+   ]
+  },
+  "V26": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p2",
+     "p3"
+    ]
+   ]
+  },
+  "V34": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p1",
+     "p3"
+    ]
+   ]
+  },
+  "V42": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p2",
+     "p3"
+    ]
+   ]
+  },
+  "V55": {
+   "abstain": false,
+   "valid_witnesses": [
+    [
+     "p2",
+     "p3"
+    ]
+   ]
+  }
+ }
+}

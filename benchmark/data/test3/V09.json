@@ -1,0 +1,119 @@
+{
+ "case_id": "V09",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "dosage",
+ "entity": "acetaminophen maximum daily dose",
+ "value_a": "4 g",
+ "value_b": "3 g",
+ "contexts": {
+  "population": "adults",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Acetaminophen is available in tablets, suspensions and suppositories.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Overdose of acetaminophen is a leading cause of acute liver failure.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "The label advises adults not to exceed 4 g of acetaminophen in 24 hours.",
+   "population": "adults",
+   "dosage_value": 4,
+   "dosage_unit": "g",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Combination cold remedies often contain acetaminophen as well.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "A clinical bulletin caps acetaminophen at 3 g per day for adults using it regularly.",
+   "population": "adults",
+   "dosage_value": 3,
+   "dosage_unit": "g",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p6",
+   "source_id": "S6",
+   "text": "Opioid-sparing analgesia is a cornerstone of enhanced recovery.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

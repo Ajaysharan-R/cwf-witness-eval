@@ -1,0 +1,107 @@
+{
+ "case_id": "V06",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "levothyroxine replacement",
+ "value_a": "100 mcg",
+ "value_b": "150 mcg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "A 70 kg adult with hypothyroidism is commonly maintained on levothyroxine 100 mcg daily.",
+   "population": "adults with hypothyroidism",
+   "dosage_value": 100,
+   "dosage_unit": "mcg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "The same adult may take levothyroxine 0.1 mg daily according to a different handbook.",
+   "population": "adults with hypothyroidism",
+   "dosage_value": 0.1,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A specialist text states levothyroxine 150 mcg daily for a 70 kg adult with hypothyroidism.",
+   "population": "adults with hypothyroidism",
+   "dosage_value": 150,
+   "dosage_unit": "mcg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Liothyronine is sometimes added in refractory symptoms.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

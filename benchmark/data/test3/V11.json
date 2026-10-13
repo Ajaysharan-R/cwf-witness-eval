@@ -1,0 +1,95 @@
+{
+ "case_id": "V11",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "aspirin in pregnancy",
+ "value_a": "81 mg",
+ "value_b": "162 mg",
+ "contexts": {
+  "population": "pregnant women at high risk",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Pregnant women at high risk of preeclampsia take aspirin 81 mg daily according to a national statement.",
+   "population": "pregnant women at high risk",
+   "dosage_value": 81,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Adults with acute MI chew aspirin 325 mg at presentation.",
+   "population": "adults with acute MI",
+   "dosage_value": 325,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A society allows aspirin 162 mg daily for pregnant women at high risk of preeclampsia.",
+   "population": "pregnant women at high risk",
+   "dosage_value": 162,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Children with Kawasaki disease receive high-dose aspirin.",
+   "population": "children with Kawasaki disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

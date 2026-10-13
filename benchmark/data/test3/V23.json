@@ -1,0 +1,68 @@
+{
+ "case_id": "V23",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "dosage",
+ "entity": "digoxin maintenance dose",
+ "value_a": "125 mcg",
+ "value_b": "0.125 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Digoxin maintenance dose is 125 mcg daily for adults with heart failure.",
+   "population": "adults with heart failure",
+   "dosage_value": 125,
+   "dosage_unit": "mcg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Digoxin maintenance is 0.125 mg daily for adults with heart failure.",
+   "population": "adults with heart failure",
+   "dosage_value": 0.125,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Serum digoxin concentration should be checked in renal impairment.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

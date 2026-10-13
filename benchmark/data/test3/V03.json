@@ -1,0 +1,119 @@
+{
+ "case_id": "V03",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "general",
+ "entity": "clear liquid fasting before elective surgery",
+ "value_a": "2 hours",
+ "value_b": "4 hours",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Pre-operative carbohydrate drinks have been studied in colorectal surgery.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Chewing gum before anaesthesia does not appear to raise aspiration risk.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Anaesthesia society A allows clear liquids until 2 hours before elective surgery in adults.",
+   "population": "adults having elective surgery",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Patients with delayed gastric emptying need individual assessment.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "Hospital protocol B stops clear liquids 4 hours before elective surgery in adults.",
+   "population": "adults having elective surgery",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p6",
+   "source_id": "S6",
+   "text": "Pre-operative anxiety is common and treatable.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

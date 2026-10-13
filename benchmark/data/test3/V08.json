@@ -1,0 +1,68 @@
+{
+ "case_id": "V08",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "jurisdiction",
+ "entity": "HPV vaccine schedule",
+ "value_a": "two doses",
+ "value_b": "three doses",
+ "contexts": {
+  "population": null,
+  "jurisdiction": "Germany",
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Germany uses a two-dose HPV vaccine schedule for girls aged 9 to 14.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Germany",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "France uses a three-dose HPV vaccine schedule for girls aged 9 to 14.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "France",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Spain uses a three-dose HPV vaccine schedule for girls aged 9 to 14.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Spain",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "case_id": "V32",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "dosage",
+ "entity": "paracetamol per-dose in febrile children",
+ "value_a": "15 mg/kg",
+ "value_b": "10 mg/kg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Fever is a common reason for paediatric consultation.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Alternating antipyretics is not routinely recommended.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Tepid sponging does not reduce fever effectively.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "One paediatric formulary gives paracetamol 15 mg/kg per dose for febrile children.",
+   "population": "febrile children",
+   "dosage_value": 15,
+   "dosage_unit": "mg/kg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "A parent leaflet advises paracetamol 10 mg/kg per dose for febrile children.",
+   "population": "febrile children",
+   "dosage_value": 10,
+   "dosage_unit": "mg/kg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

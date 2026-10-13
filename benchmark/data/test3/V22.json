@@ -1,0 +1,78 @@
+{
+ "case_id": "V22",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "general",
+ "entity": "antibiotic prophylaxis for dental procedures in mitral valve prolapse",
+ "value_a": "recommended",
+ "value_b": "not recommended",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Infective endocarditis is uncommon but carries high mortality.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "One older statement advised antibiotic prophylaxis before dental extraction in patients with mitral valve prolapse and regurgitation.",
+   "population": "patients with mitral valve prolapse",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A recent statement does not recommend antibiotic prophylaxis before dental procedures in patients with mitral valve prolapse.",
+   "population": "patients with mitral valve prolapse",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "adjudicated"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

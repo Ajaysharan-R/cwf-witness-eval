@@ -1,0 +1,30 @@
+split=benchmark\data\test3 n=60 answerable=44 abstain=16 reference=cwf_v21
+
+method             overall (Wilson 95%)   answerable exact   passage P/R/F1   abstain P/R/F1       false-abst ms/case 
+cwf_v1             43/60 0.72 [0.59,0.81]  36/44 [0.68,0.90]  0.84/0.84/0.84   0.54/0.44/0.48   0.14   0.29
+cwf_v2             49/60 0.82 [0.70,0.89]  38/44 [0.73,0.94]  0.86/0.86/0.86   0.65/0.69/0.67   0.14   0.15
+cwf_v21            49/60 0.82 [0.70,0.89]  38/44 [0.73,0.94]  0.86/0.86/0.86   0.65/0.69/0.67   0.14   0.15
+no_context_filter  43/60 0.72 [0.59,0.81]  36/44 [0.68,0.90]  0.84/0.84/0.84   0.54/0.44/0.48   0.14   0.26
+bm25_top2          41/60 0.68 [0.56,0.79]  41/44 [0.82,0.98]  0.97/0.97/0.97    -- /0.00/ --    0.00   0.04
+full_evidence       0/60 0.00 [-0.00,0.06]   0/44 [0.00,0.08]  0.49/1.00/0.65    -- /0.00/ --    0.00   0.00
+nli_top2           22/60 0.37 [0.26,0.49]  22/44 [0.36,0.64]  0.72/0.72/0.72    -- /0.00/ --    0.00   n/a (cached)
+llama_selector     40/60 0.67 [0.54,0.77]  40/44 [0.79,0.96]  0.95/0.95/0.95    -- /0.00/ --    0.00   n/a (cached)
+llama_abstain      36/60 0.60 [0.47,0.71]  29/44 [0.51,0.78]  0.69/0.69/0.69   0.37/0.44/0.40   0.27   6201 (Ollama, measured)
+llama8b_abstain    44/60 0.73 [0.61,0.83]  44/44 [0.92,1.00]  1.00/1.00/1.00    -- /0.00/ --    0.00   12377 (Ollama, measured)
+bm25_abstain       41/60 0.68 [0.56,0.79]  38/44 [0.73,0.94]  0.89/0.89/0.89   0.43/0.19/0.26   0.09   0.04
+nli_abstain        19/60 0.32 [0.21,0.44]  14/44 [0.20,0.47]  0.50/0.50/0.50   0.29/0.31/0.30   0.27   n/a (cached)
+
+Comparison vs cwf_v21 (exact McNemar; Holm across the 10 comparisons in each column; paired bootstrap 10,000)
+method             overall ref-only/other-only p            p(Holm)      abstain-subgroup           p            p(Holm)     
+cwf_v1              9 / 3   diff CI [-0.017,+0.217]   0.1460       0.5840        5 / 1               0.2188       1.0000      
+cwf_v2              0 / 0   diff CI [+0.000,+0.000]   1.0000       1.0000        0 / 0               1.0000       1.0000      
+no_context_filter   9 / 3   diff CI [-0.017,+0.217]   0.1460       0.5840        5 / 1               0.2188       1.0000      
+bm25_top2          14 / 6   diff CI [-0.017,+0.283]   0.1153       0.5775       11 / 0               0.0010       0.0098      
+nli_top2           32 / 5   diff CI [+0.283,+0.600]   0.0000       0.0001       11 / 0               0.0010       0.0098      
+llama_selector     14 / 5   diff CI [+0.017,+0.283]   0.0636       0.4450       11 / 0               0.0010       0.0098      
+llama_abstain      17 / 4   diff CI [+0.083,+0.350]   0.0072       0.0576        6 / 2               0.2891       1.0000      
+llama8b_abstain    11 / 6   diff CI [-0.050,+0.217]   0.3323       0.6646       11 / 0               0.0010       0.0098      
+bm25_abstain       13 / 5   diff CI [+0.000,+0.267]   0.0963       0.5775        8 / 0               0.0078       0.0469      
+nli_abstain        37 / 7   diff CI [+0.317,+0.667]   0.0000       0.0001       11 / 5               0.2101       1.0000      
+
+The abstain-subgroup column is a subgroup analysis (16 cases), not an overall-superiority test.

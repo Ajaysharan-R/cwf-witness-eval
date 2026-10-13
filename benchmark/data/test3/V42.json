@@ -1,0 +1,78 @@
+{
+ "case_id": "V42",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "specialty",
+ "entity": "statin therapy in dialysis",
+ "value_a": "continue",
+ "value_b": "do not initiate",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Cardiovascular disease is the leading cause of death in dialysis patients.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Nephrology guidance advises against initiating a statin in adults already receiving maintenance dialysis.",
+   "population": "adults on maintenance dialysis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "nephrology",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Cardiology guidance supports initiating a statin in adults receiving maintenance dialysis who have established atherosclerosis.",
+   "population": "adults on maintenance dialysis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "cardiology",
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "adjudicated"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

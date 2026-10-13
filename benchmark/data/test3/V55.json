@@ -1,0 +1,78 @@
+{
+ "case_id": "V55",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "temporal",
+ "entity": "hypertension treatment threshold",
+ "value_a": "140/90 mmHg",
+ "value_b": "130/80 mmHg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Home blood pressure monitoring improves diagnostic accuracy.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Between 2010 and 2016 the guideline set the treatment threshold for adults with hypertension at 140/90 mmHg.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2010",
+   "time_period_end": "2016"
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Between 2017 and 2024 the guideline lowered the treatment threshold for adults with hypertension to 130/80 mmHg.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2017",
+   "time_period_end": "2024"
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "adjudicated"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

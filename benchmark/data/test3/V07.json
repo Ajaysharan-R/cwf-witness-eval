@@ -1,0 +1,119 @@
+{
+ "case_id": "V07",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "metformin target daily dose",
+ "value_a": "2000 mg",
+ "value_b": "1500 mg",
+ "contexts": {
+  "population": "adults with type 2 diabetes",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Metformin target dose is 2000 mg daily for adults with type 2 diabetes.",
+   "population": "adults with type 2 diabetes",
+   "dosage_value": 2000,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "For children aged 10 to 16 with type 2 diabetes, metformin may be titrated to 1000 mg twice daily.",
+   "population": "children aged 10 to 16",
+   "dosage_value": 2000,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Glipizide is typically started at 5 mg daily in adults with type 2 diabetes.",
+   "population": "adults with type 2 diabetes",
+   "dosage_value": 5,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Another formulary caps the target metformin dose at 1500 mg daily for adults with type 2 diabetes.",
+   "population": "adults with type 2 diabetes",
+   "dosage_value": 1500,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "A third source also lists a metformin target of 2000 mg daily for adults with type 2 diabetes.",
+   "population": "adults with type 2 diabetes",
+   "dosage_value": 2000,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p4"
+   ],
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

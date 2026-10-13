@@ -1,0 +1,83 @@
+{
+ "case_id": "V60",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "dosage",
+ "entity": "aspirin for preeclampsia prophylaxis",
+ "value_a": "81 mg",
+ "value_b": "150 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Preeclampsia affects roughly 2 to 8 percent of pregnancies.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Pregnant women at high risk of preeclampsia are advised to take aspirin 81 mg nightly from 12 weeks.",
+   "population": "pregnant women at high risk",
+   "dosage_value": 81,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A regional protocol prescribes aspirin 150 mg nightly from 12 weeks for pregnant women at high risk of preeclampsia.",
+   "population": "pregnant women at high risk",
+   "dosage_value": 150,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

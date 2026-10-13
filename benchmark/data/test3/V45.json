@@ -1,0 +1,95 @@
+{
+ "case_id": "V45",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "general",
+ "entity": "tetanus booster interval",
+ "value_a": "10 years",
+ "value_b": "20 years",
+ "contexts": {
+  "population": null,
+  "jurisdiction": "Australia",
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Australian guideline A recommends a tetanus booster every 10 years for adults.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Australia",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Canadian guidance recommends a tetanus booster every 10 years for adults.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Canada",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Australian guideline B states a tetanus booster interval of 20 years is sufficient for adults.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Australia",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "New Zealand guidance suggests boosters at ages 45 and 65.",
+   "population": "adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "New Zealand",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

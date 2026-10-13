@@ -1,0 +1,95 @@
+{
+ "case_id": "V43",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "clopidogrel loading dose",
+ "value_a": "300 mg",
+ "value_b": "600 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Clopidogrel 300 mg loading dose is given to adults before PCI per one protocol.",
+   "population": "adults undergoing PCI",
+   "dosage_value": 300,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Ticagrelor 180 mg loading dose is given to adults before PCI.",
+   "population": "adults undergoing PCI",
+   "dosage_value": 180,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Another protocol gives a clopidogrel 600 mg loading dose to adults undergoing PCI.",
+   "population": "adults undergoing PCI",
+   "dosage_value": 600,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Prasugrel is avoided in patients with prior stroke.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

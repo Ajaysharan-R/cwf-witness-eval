@@ -1,0 +1,83 @@
+{
+ "case_id": "V24",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "jurisdiction",
+ "entity": "pneumococcal vaccine eligibility age",
+ "value_a": "65 years",
+ "value_b": "60 years",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Pneumococcal conjugate vaccines reduce invasive disease in older adults.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Country X offers pneumococcal vaccination to all adults from age 65.",
+   "population": "older adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country X",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Country Y offers pneumococcal vaccination to all adults from age 60.",
+   "population": "older adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country Y",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

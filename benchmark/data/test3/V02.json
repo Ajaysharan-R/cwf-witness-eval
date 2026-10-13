@@ -1,0 +1,68 @@
+{
+ "case_id": "V02",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "general",
+ "entity": "blood pressure target",
+ "value_a": "<130/80",
+ "value_b": "<150/90",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Adults with chronic kidney disease are targeted to below 130/80 mmHg.",
+   "population": "adults with chronic kidney disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Frail adults over 80 are targeted to below 150/90 mmHg.",
+   "population": "frail adults over 80",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Salt restriction supports blood pressure control.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

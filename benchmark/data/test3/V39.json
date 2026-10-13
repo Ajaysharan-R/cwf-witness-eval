@@ -1,0 +1,107 @@
+{
+ "case_id": "V39",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "dosage",
+ "entity": "prednisone for COPD exacerbation",
+ "value_a": "40 mg",
+ "value_b": "30 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "COPD exacerbations are often triggered by respiratory infections.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Oxygen should be titrated to a saturation of 88 to 92 percent.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Systemic corticosteroids shorten recovery time in exacerbations.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "A respiratory society advises prednisone 40 mg daily for 5 days in adults with COPD exacerbation.",
+   "population": "adults with COPD exacerbation",
+   "dosage_value": 40,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "A district guideline advises prednisone 30 mg daily for adults with COPD exacerbation.",
+   "population": "adults with COPD exacerbation",
+   "dosage_value": 30,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p4",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "case_id": "V57",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "dosage",
+ "entity": "ramipril",
+ "value_a": "10 mg",
+ "value_b": "20 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "The target dose of ramipril in adults with heart failure is 10 mg daily.",
+   "population": "adults with heart failure",
+   "dosage_value": 10,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "The maximum dose of ramipril in adults with heart failure is 20 mg daily.",
+   "population": "adults with heart failure",
+   "dosage_value": 20,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Hyperkalaemia and renal function need monitoring after titration.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

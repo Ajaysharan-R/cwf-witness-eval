@@ -1,0 +1,83 @@
+{
+ "case_id": "V28",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "general",
+ "entity": "haemoglobin target on ESA in CKD",
+ "value_a": "11 g/dL",
+ "value_b": "13 g/dL",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Anaemia is common in advanced chronic kidney disease.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Guideline P suggests a haemoglobin target of about 11 g/dL when treating adults with CKD with erythropoiesis-stimulating agents.",
+   "population": "adults with chronic kidney disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Guideline Q suggests a haemoglobin target of up to 13 g/dL when treating adults with CKD with erythropoiesis-stimulating agents.",
+   "population": "adults with chronic kidney disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

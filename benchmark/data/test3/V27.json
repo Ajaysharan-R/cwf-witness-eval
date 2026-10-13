@@ -1,0 +1,119 @@
+{
+ "case_id": "V27",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "jurisdiction",
+ "entity": "colorectal cancer screening start age",
+ "value_a": "45 years",
+ "value_b": "50 years",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Faecal immunochemical testing is a non-invasive screening tool.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Colonoscopy is the diagnostic standard after a positive stool test.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "In the United States, average-risk adults are advised to begin colorectal screening at age 45.",
+   "population": "average-risk adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "United States",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Lynch syndrome carriers need earlier surveillance.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "In the United Kingdom, the programme invites average-risk adults for colorectal screening from age 50.",
+   "population": "average-risk adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "United Kingdom",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p6",
+   "source_id": "S6",
+   "text": "Adenoma detection rate is a quality indicator for endoscopists.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "case_id": "V40",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "dosage",
+ "entity": "atorvastatin",
+ "value_a": "80 mg daily",
+ "value_b": "40 mg daily",
+ "contexts": {
+  "population": "adults after acute coronary syndrome",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Statins lower LDL cholesterol by inhibiting HMG-CoA reductase.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "For adults after an acute coronary syndrome, the guidance advises atorvastatin 80 mg once daily.",
+   "population": "adults after acute coronary syndrome",
+   "dosage_value": 80,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "The trial protocol gave adults after an acute coronary syndrome atorvastatin 40 mg once daily.",
+   "population": "adults after acute coronary syndrome",
+   "dosage_value": 40,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Lipid panels are usually repeated 6 to 12 weeks after starting therapy.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

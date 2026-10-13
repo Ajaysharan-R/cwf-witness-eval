@@ -1,0 +1,107 @@
+{
+ "case_id": "V16",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "general",
+ "entity": "tamoxifen duration",
+ "value_a": "5 years",
+ "value_b": "10 years",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Guideline A recommends 5 years of tamoxifen for premenopausal women with ER-positive breast cancer.",
+   "population": "premenopausal women with ER-positive breast cancer",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "A reprint of Guideline A, hosted by a patient charity, recommends 5 years of tamoxifen for premenopausal women with ER-positive breast cancer.",
+   "population": "premenopausal women with ER-positive breast cancer",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Guideline D suggests extending tamoxifen to 10 years in premenopausal women with ER-positive breast cancer.",
+   "population": "premenopausal women with ER-positive breast cancer",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Aromatase inhibitors for 5 years are used in postmenopausal women.",
+   "population": "postmenopausal women",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ],
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

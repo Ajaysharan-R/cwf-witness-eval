@@ -1,0 +1,102 @@
+{
+ "case_id": "V17",
+ "split": "test3",
+ "category": "noisy",
+ "attribute": "temporal",
+ "entity": "iPTH target in dialysis",
+ "value_a": "150-300 pg/mL",
+ "value_b": "2-9 times upper limit",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Secondary hyperparathyroidism complicates chronic kidney disease.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Calcimimetics lower PTH levels.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Between 2003 and 2008 the guideline advised an iPTH target of 150-300 pg/mL in patients on dialysis.",
+   "population": "patients on dialysis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2003",
+   "time_period_end": "2008"
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Phosphate binders are often needed alongside dietary restriction.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "From 2009 to 2024 the guideline advised an iPTH of 2 to 9 times the upper normal limit in patients on dialysis.",
+   "population": "patients on dialysis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2009",
+   "time_period_end": "2024"
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "adjudicated"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p3",
+    "p5"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

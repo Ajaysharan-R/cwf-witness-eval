@@ -1,0 +1,95 @@
+{
+ "case_id": "V15",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "dosage",
+ "entity": "lithium serum level",
+ "value_a": "0.6 mmol/L",
+ "value_b": "1.0 mmol/L",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Lithium requires monitoring of renal and thyroid function.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "For maintenance treatment of bipolar disorder in adults, a trough serum lithium of 0.6 mmol/L is targeted.",
+   "population": "adults with bipolar disorder",
+   "dosage_value": 0.6,
+   "dosage_unit": "mmol/L",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Another service aims for a trough serum lithium of 1.0 mmol/L in adults on bipolar maintenance therapy.",
+   "population": "adults with bipolar disorder",
+   "dosage_value": 1.0,
+   "dosage_unit": "mmol/L",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Dehydration can precipitate lithium toxicity.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "case_id": "V49",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "dosage",
+ "entity": "vitamin D supplementation",
+ "value_a": "800 IU",
+ "value_b": "400 IU",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Adults over 65 are advised vitamin D 800 IU daily by guideline A.",
+   "population": "adults over 65",
+   "dosage_value": 800,
+   "dosage_unit": "IU",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Vitamin D 800 IU daily is advised for adults over 65 by guideline B.",
+   "population": "adults over 65",
+   "dosage_value": 800,
+   "dosage_unit": "IU",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Breastfed infants receive vitamin D 400 IU daily.",
+   "population": "breastfed infants",
+   "dosage_value": 400,
+   "dosage_unit": "IU",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Sun exposure varies seasonally.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "case_id": "V35",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "specialty",
+ "entity": "LDL target in diabetes",
+ "value_a": "<70 mg/dL",
+ "value_b": "<100 mg/dL",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Cardiology societies recommend an LDL target below 70 mg/dL for adults with diabetes and established atherosclerosis.",
+   "population": "adults with diabetes and atherosclerosis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "cardiology",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Paediatric endocrinology advises an LDL target below 100 mg/dL for children with diabetes.",
+   "population": "children with diabetes",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "paediatric endocrinology",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Endocrinology societies accept an LDL target below 100 mg/dL for adults with diabetes and established atherosclerosis.",
+   "population": "adults with diabetes and atherosclerosis",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "endocrinology",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Dietary fibre can modestly lower LDL.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

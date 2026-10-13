@@ -1,0 +1,68 @@
+{
+ "case_id": "V38",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "specialty",
+ "entity": "oral anticoagulant choice in children with VTE",
+ "value_a": "DOAC",
+ "value_b": "LMWH",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": "paediatrics",
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Paediatric haematology guidance supports a direct oral anticoagulant in children with venous thromboembolism.",
+   "population": "children with venous thromboembolism",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "paediatrics",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Cardiology guidance supports a direct oral anticoagulant in adults with atrial fibrillation.",
+   "population": "adults with atrial fibrillation",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "cardiology",
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Vascular surgery guidance prefers LMWH in adults after orthopaedic surgery.",
+   "population": "adults after orthopaedic surgery",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": "surgery",
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

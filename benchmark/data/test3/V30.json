@@ -1,0 +1,95 @@
+{
+ "case_id": "V30",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "dosage",
+ "entity": "levothyroxine",
+ "value_a": "1.6 mcg/kg/day",
+ "value_b": "2.0 mcg/kg/day",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Take levothyroxine on an empty stomach, 30 to 60 minutes before breakfast.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Full replacement of levothyroxine in adults with primary hypothyroidism is about 1.6 mcg/kg/day.",
+   "population": "adults with primary hypothyroidism",
+   "dosage_value": 1.6,
+   "dosage_unit": "mcg/kg/day",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Some texts instead calculate full levothyroxine replacement in adults with primary hypothyroidism as 2.0 mcg/kg/day.",
+   "population": "adults with primary hypothyroidism",
+   "dosage_value": 2.0,
+   "dosage_unit": "mcg/kg/day",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "TSH is rechecked six to eight weeks after any dose change.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "bm25_abstain": 1.0018780189825907,
+ "nli_abstain": 0.41768631439073184,
+ "tuned_on": "benchmark\\data\\test",
+ "tuned_exact": {
+  "bm25_abstain": 25,
+  "nli_abstain": 23
+ }
+}

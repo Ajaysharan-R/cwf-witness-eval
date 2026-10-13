@@ -1,0 +1,69 @@
+{
+ "case_id": "V54",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "dosage",
+ "entity": "amoxicillin",
+ "value_a": "90 mg/kg/day",
+ "value_b": "45 mg/kg/day",
+ "contexts": {
+  "population": "children with acute otitis media",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "High-dose amoxicillin is given in divided doses twice daily for acute otitis media in children aged 6 months to 12 years.",
+   "population": "children",
+   "dosage_value": 90,
+   "dosage_unit": "mg/kg/day",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Watchful waiting is an option for mild otitis media in older children.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A national formulary lists amoxicillin 45 mg/kg/day for children aged 6 months to 12 years with acute otitis media.",
+   "population": "children",
+   "dosage_value": 45,
+   "dosage_unit": "mg/kg/day",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A",
+  "notes": "originally designed as clean; adjudicated to abstain"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "case_id": "V50",
+ "split": "test3",
+ "category": "abstain",
+ "attribute": "temporal",
+ "entity": "anticoagulation duration after provoked DVT",
+ "value_a": "3 months",
+ "value_b": "6 months",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": "2020-2024"
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "In 2021 to 2024, guidance advised 3 months of anticoagulation after a provoked DVT in adults.",
+   "population": "adults with provoked DVT",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2021",
+   "time_period_end": "2024"
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "In 2006 to 2010, guidance advised 6 months after a provoked DVT in adults.",
+   "population": "adults with provoked DVT",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": "2006",
+   "time_period_end": "2010"
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Compression stockings do not prevent post-thrombotic syndrome.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": true,
+  "valid_witnesses": [],
+  "annotator": "A"
+ }
+}

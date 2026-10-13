@@ -1,0 +1,9 @@
+C vs final gold: n=60  exact-agreement=54/60  abstain-kappa=0.806  passage-kappa=0.884
+   disagreements (6): ['V04', 'V09', 'V22', 'V26', 'V42', 'V43']
+   of which witness-vs-none flips (5): ['V04', 'V22', 'V26', 'V42', 'V43']
+C vs A: n=60  exact-agreement=55/60  abstain-kappa=0.847  passage-kappa=0.901
+   disagreements (5): ['V04', 'V09', 'V22', 'V26', 'V43']
+   of which witness-vs-none flips (4): ['V04', 'V22', 'V26', 'V43']
+C vs B: n=60  exact-agreement=52/60  abstain-kappa=0.746  passage-kappa=0.842
+   disagreements (8): ['V04', 'V09', 'V17', 'V20', 'V34', 'V42', 'V43', 'V55']
+   of which witness-vs-none flips (7): ['V04', 'V17', 'V20', 'V34', 'V42', 'V43', 'V55']

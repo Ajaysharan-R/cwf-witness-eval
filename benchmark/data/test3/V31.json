@@ -1,0 +1,107 @@
+{
+ "case_id": "V31",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "general",
+ "entity": "PSA screening start age",
+ "value_a": "50 years",
+ "value_b": "55 years",
+ "contexts": {
+  "population": null,
+  "jurisdiction": "United States",
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "US guideline A recommends discussing PSA screening from age 50 with average-risk men.",
+   "population": "average-risk men",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "United States",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "The UK committee suggests offering PSA testing to men from age 45.",
+   "population": "men",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "United Kingdom",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "US guideline B recommends shared decision-making about PSA screening beginning at age 55 for average-risk men.",
+   "population": "average-risk men",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "United States",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "European guidance mentions risk-adapted screening from age 50.",
+   "population": "men",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Europe",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p5",
+   "source_id": "S5",
+   "text": "Digital rectal examination alone is not an adequate screen.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

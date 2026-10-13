@@ -1,0 +1,95 @@
+{
+ "case_id": "V13",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "dosage",
+ "entity": "lamotrigine maintenance dose",
+ "value_a": "200 mg",
+ "value_b": "300 mg",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Titration of lamotrigine begins at 25 mg daily in adults with epilepsy.",
+   "population": "adults with epilepsy",
+   "dosage_value": 25,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "A usual maintenance dose of lamotrigine in adults with epilepsy is 200 mg daily.",
+   "population": "adults with epilepsy",
+   "dosage_value": 200,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "The maximum recommended lamotrigine dose in adults with epilepsy is 400 mg daily.",
+   "population": "adults with epilepsy",
+   "dosage_value": 400,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Another reference lists a maintenance lamotrigine dose of 300 mg daily in adults with epilepsy.",
+   "population": "adults with epilepsy",
+   "dosage_value": 300,
+   "dosage_unit": "mg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p4"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

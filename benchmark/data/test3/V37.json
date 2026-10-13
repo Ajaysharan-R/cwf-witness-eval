@@ -1,0 +1,95 @@
+{
+ "case_id": "V37",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "population",
+ "entity": "statin initiation in people over 75 without CVD",
+ "value_a": "initiate",
+ "value_b": "do not routinely initiate",
+ "contexts": {
+  "population": "adults over 75 without cardiovascular disease",
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Guideline A supports initiating a statin in adults aged 40 to 75 with diabetes.",
+   "population": "adults aged 40 to 75 with diabetes",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Guideline B supports initiating a statin in adults over 75 without cardiovascular disease after shared decision-making.",
+   "population": "adults over 75 without cardiovascular disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Guideline C states that statins should not routinely be initiated in adults over 75 without cardiovascular disease.",
+   "population": "adults over 75 without cardiovascular disease",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Frailty and life expectancy should inform prescribing.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

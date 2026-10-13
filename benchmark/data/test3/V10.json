@@ -1,0 +1,83 @@
+{
+ "case_id": "V10",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "jurisdiction",
+ "entity": "HPV vaccine schedule",
+ "value_a": "three doses",
+ "value_b": "two doses",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "HPV vaccination is most effective when given before sexual debut.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "In Country A, girls aged 9 to 14 years receive a three-dose HPV vaccine schedule.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country A",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "In Country B, girls aged 9 to 14 years receive a two-dose HPV vaccine schedule.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country B",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

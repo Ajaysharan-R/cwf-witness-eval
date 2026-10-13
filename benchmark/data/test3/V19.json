@@ -1,0 +1,83 @@
+{
+ "case_id": "V19",
+ "split": "test3",
+ "category": "clean",
+ "attribute": "dosage",
+ "entity": "budesonide",
+ "value_a": "200 mcg/day",
+ "value_b": "400 mcg/day",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Inhaled corticosteroids are first-line controllers in persistent asthma.",
+   "population": null,
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "A low daily dose of inhaled budesonide for children aged 6 to 11 with asthma is 200 mcg.",
+   "population": "children aged 6 to 11",
+   "dosage_value": 200,
+   "dosage_unit": "mcg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "A different table lists low-dose inhaled budesonide for children aged 6 to 11 with asthma as 400 mcg daily.",
+   "population": "children aged 6 to 11",
+   "dosage_value": 400,
+   "dosage_unit": "mcg",
+   "jurisdiction": null,
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p2",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}

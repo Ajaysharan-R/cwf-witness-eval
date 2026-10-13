@@ -1,0 +1,95 @@
+{
+ "case_id": "V56",
+ "split": "test3",
+ "category": "adversarial",
+ "attribute": "jurisdiction",
+ "entity": "HPV schedule for early adolescents",
+ "value_a": "three doses",
+ "value_b": "two doses",
+ "contexts": {
+  "population": null,
+  "jurisdiction": null,
+  "specialty": null,
+  "time": null
+ },
+ "passages": [
+  {
+   "id": "p1",
+   "source_id": "S1",
+   "text": "Country A gives three doses of HPV vaccine to girls aged 9 to 14.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country A",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p2",
+   "source_id": "S2",
+   "text": "Country A also gives three doses to immunocompromised adults.",
+   "population": "immunocompromised adults",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country A",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p3",
+   "source_id": "S3",
+   "text": "Country B gives two doses of HPV vaccine to girls aged 9 to 14.",
+   "population": "girls aged 9 to 14",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country B",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  },
+  {
+   "id": "p4",
+   "source_id": "S4",
+   "text": "Country C gives three doses of HPV vaccine to adults aged 27 to 45.",
+   "population": "adults aged 27 to 45",
+   "dosage_value": null,
+   "dosage_unit": null,
+   "jurisdiction": "Country C",
+   "specialty": null,
+   "time_period_start": null,
+   "time_period_end": null
+  }
+ ],
+ "gold": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ },
+ "second_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "B"
+ },
+ "first_annotation": {
+  "abstain": false,
+  "valid_witnesses": [
+   [
+    "p1",
+    "p3"
+   ]
+  ],
+  "annotator": "A"
+ }
+}
